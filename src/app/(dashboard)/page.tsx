@@ -1,6 +1,8 @@
 import { DashboardBottomNavbar } from "@/modules/dashboard/ui/dashboard-bottom-navbar";
+import { DashboardCityTable } from "@/modules/dashboard/ui/dashboard-city-table";
 import { DashboardNavbar } from "@/modules/dashboard/ui/dashboard-navbar";
 import { DashboardSalesMetrics } from "@/modules/dashboard/ui/dashboard-sales-metrics";
+import { DashboardTable } from "@/modules/dashboard/ui/dashboard-table";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
         <DashboardNavbar />
         <DashboardBottomNavbar />
         <DashboardSalesMetrics />
+        <DashboardTable />
+        <DashboardCityTable />
       </div>
     </div>
   );
