@@ -132,7 +132,6 @@ export const InventoryTable = () => {
 
   return (
     <div className="w-full overflow-auto border border-[#F1F1F1] rounded-xl bg-white mt-4 shadow-sm">
-      {/* Mobile View - Simplified Table */}
       <div className="md:hidden p-4 space-y-4">
         {inventoryData
           .filter((row) => !row.isSubRow)
@@ -168,8 +167,6 @@ export const InventoryTable = () => {
                   <p>{renderTrend(row.avgRank)}</p>
                 </div>
               </div>
-
-              {/* Show sub-rows if any */}
               {inventoryData
                 .filter((subRow) => subRow.parentId === row.id)
                 .map((subRow) => (
@@ -188,8 +185,6 @@ export const InventoryTable = () => {
                 ))}
             </div>
           ))}
-
-        {/* Mobile Total */}
         <div className="border rounded-lg p-4 bg-gray-50">
           <h3 className="font-medium mb-3">Total</h3>
           <div className="grid grid-cols-2 gap-2 text-sm">
@@ -204,8 +199,6 @@ export const InventoryTable = () => {
           </div>
         </div>
       </div>
-
-      {/* Desktop View - Full Table */}
       <div className="hidden md:block">
         <Table className="border-collapse">
           <TableHeader>

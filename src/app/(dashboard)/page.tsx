@@ -6,8 +6,8 @@ import { DashboardTable } from "@/modules/dashboard/ui/dashboard-table";
 
 export default function Home() {
   return (
-    <div className=" p-4">
-      <div className="border border-[#EBEBEB] bg-[#FAFAFA] rounded-lg mt-[4px]">
+    <div className="px-4 py-2">
+      <div className="border border-[#EBEBEB] bg-[#FAFAFA] rounded-lg mt-[12px]">
         <DashboardNavbar />
         <DashboardBottomNavbar />
         <DashboardSalesMetrics />
